@@ -27,7 +27,7 @@ GHCR_ORG="ghcr.io"
 ORG=${DOCKER_BUILD_ORG:-project-chip}
 
 # Latest commit hash
-GIT_SHA=$(git rev-parse --short HEAD)
+GIT_SHA=$(git rev-parse --short "$GITHUB_SHA")
 
 # If working copy has changes, append `-local` to hash
 GIT_DIFF=$(git diff -s --exit-code || echo "-local")
