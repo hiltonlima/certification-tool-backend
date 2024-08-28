@@ -24,7 +24,7 @@ DEFAULT_IMAGE=csa-certification-tool-backend
 
 
 GHCR_ORG="ghcr.io"
-ORG=${DOCKER_BUILD_ORG:-project-chip}
+ORG=${DOCKER_BUILD_ORG:-hiltonlima}
 
 # Latest commit hash
 GIT_SHA=$(git rev-parse --short "$GITHUB_SHA")
